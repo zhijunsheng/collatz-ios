@@ -19,8 +19,12 @@ class ViewController: UIViewController {
         let inputString = inputTextField.text!
         print(inputString)
         var inputInt = Int(inputString)!
+        if inputInt == 0 {
+            return
+        }
         var resultString = ""
-        while true {
+        resultString += " " + inputString
+        while inputInt != 1 {
             var isEven = true
             if inputInt % 2 == 1 {
                 isEven = false
@@ -34,11 +38,7 @@ class ViewController: UIViewController {
                 inputInt = inputInt / 2
                 print(" -> \(inputInt)", terminator: "")
                 resultString += " -> \(inputInt)"
-            }
-            if inputInt == 1{
-                print("......")
-                resultString += "......"
-                break
+                
             }
         }
         resultLabel.text = resultString
