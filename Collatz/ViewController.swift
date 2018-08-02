@@ -9,16 +9,41 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    @IBOutlet weak var inputTextField: UITextField!
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBAction func calculateTapped(_ sender: Any) {
+        let inputString = inputTextField.text!
+        print(inputString)
+        var inputInt = Int(inputString)!
+        var resultString = ""
+        while true {
+            var isEven = true
+            if inputInt % 2 == 1 {
+                isEven = false
+            }
+            if isEven == false {
+                inputInt = 3 * inputInt + 1
+                print(" -> \(inputInt)", terminator: "")
+                resultString += " -> \(inputInt)"
+            }
+            if isEven == true {
+                inputInt = inputInt / 2
+                print(" -> \(inputInt)", terminator: "")
+                resultString += " -> \(inputInt)"
+            }
+            if inputInt == 1{
+                print("......")
+                resultString += "......"
+                break
+            }
+        }
+        resultLabel.text = resultString
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 
 
 }
