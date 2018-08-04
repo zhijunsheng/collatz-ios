@@ -18,31 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5Y-GD-G3Q">
-                                <rect key="frame" x="0.0" y="167" width="375" height="500"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5Y-GD-G3Q">
+                                <rect key="frame" x="0.0" y="217" width="375" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="8KL-zv-qxe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxS-zb-a4Q">
-                                <rect key="frame" x="0.0" y="112" width="375" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxS-zb-a4Q">
+                                <rect key="frame" x="0.0" y="112" width="375" height="79"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
                                     <action selector="calculateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKz-wl-JfG"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter An Integer" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gto-bn-3Ah">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter An Integer" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gto-bn-3Ah">
                                 <rect key="frame" x="0.0" y="66" width="375" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RxS-zb-a4Q" firstAttribute="top" secondItem="gto-bn-3Ah" secondAttribute="bottom" constant="8" symbolic="YES" id="0GE-0k-ND9"/>
+                            <constraint firstItem="gto-bn-3Ah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0tJ-hJ-Eet"/>
+                            <constraint firstItem="RxS-zb-a4Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Np-dr-qUU"/>
+                            <constraint firstItem="A5Y-GD-G3Q" firstAttribute="leading" secondItem="RxS-zb-a4Q" secondAttribute="leading" id="7Xa-Z3-oAY"/>
+                            <constraint firstItem="A5Y-GD-G3Q" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="NA6-uj-1yn"/>
+                            <constraint firstItem="gto-bn-3Ah" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="NGp-Ft-rxK"/>
+                            <constraint firstItem="gto-bn-3Ah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VhZ-RK-Ihc"/>
+                            <constraint firstItem="A5Y-GD-G3Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wd8-4u-lp9"/>
+                            <constraint firstItem="gto-bn-3Ah" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="anU-xU-Vvr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RxS-zb-a4Q" secondAttribute="trailing" id="eVA-BC-Q7h"/>
+                            <constraint firstItem="RxS-zb-a4Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iH9-X5-13a"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>

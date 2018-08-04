@@ -61,10 +61,24 @@ class CollatzTests: XCTestCase {
         print("a = \(a), b = \(b)")
         
         // your code goes here to swap a and b, try a + b
-        
+        a = a + b
+        b = a - b
+        a = a - b
         
         print("a = \(a), b = \(b)")
     }
-
+    
+    func testSwapTwoInts3() {
+        var a = 5
+        var b = 3
+        print("a = \(a), b = \(b)")
+        
+        // your code goes here to swap a and b, try a + b
+        a = a - b
+        b = a + b
+        a = b - a
+        
+        print("a = \(a), b = \(b)")
+    }
     
 }

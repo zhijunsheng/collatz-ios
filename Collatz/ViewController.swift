@@ -17,7 +17,9 @@ class ViewController: UIViewController {
     
     @IBAction func calculateTapped(_ sender: Any) {
         let inputString = inputTextField.text!
-        print(inputString)
+        if inputString.count == 0 {
+            return
+        }
         var inputInt = Int(inputString)!
         if inputInt == 0 {
             return
