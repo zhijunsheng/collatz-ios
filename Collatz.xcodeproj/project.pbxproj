@@ -13,6 +13,7 @@
 		073ACD0E2110699D00DAEDAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073ACD0D2110699D00DAEDAD /* Assets.xcassets */; };
 		073ACD112110699D00DAEDAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073ACD0F2110699D00DAEDAD /* LaunchScreen.storyboard */; };
 		073ACD1C2110699D00DAEDAD /* CollatzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073ACD1B2110699D00DAEDAD /* CollatzTests.swift */; };
+		C0D5679D211680380085F1F9 /* LoopingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D5679C211680380085F1F9 /* LoopingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		073ACD172110699D00DAEDAD /* CollatzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollatzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		073ACD1B2110699D00DAEDAD /* CollatzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollatzTests.swift; sourceTree = "<group>"; };
 		073ACD1D2110699D00DAEDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0D5679C211680380085F1F9 /* LoopingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				073ACD1B2110699D00DAEDAD /* CollatzTests.swift */,
 				073ACD1D2110699D00DAEDAD /* Info.plist */,
+				C0D5679C211680380085F1F9 /* LoopingTests.swift */,
 			);
 			path = CollatzTests;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D5679D211680380085F1F9 /* LoopingTests.swift in Sources */,
 				073ACD1C2110699D00DAEDAD /* CollatzTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
