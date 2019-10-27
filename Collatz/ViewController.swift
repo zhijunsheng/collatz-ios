@@ -8,7 +8,11 @@ class ViewController: UIViewController {
     @IBAction func showResult(_ sender: UIButton) {
         print("//  Created by Donald Sheng on 2018-07-31.")
         print(itf.text)
-        
+        if itf.text == nil {
+            return
+        }
+        let number = Int(itf.text!)
+        print(number)
         
         /*
          
